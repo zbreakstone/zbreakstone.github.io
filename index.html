@@ -2,15 +2,46 @@
 <html>
 	<head>
 		<title>Thoughtfire | We &hearts; you!</title>
-		<!-- Latest compiled and minified Bootstrap Files -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
-		<!-- Custom style -->
+		<link rel="stylesheet" href="css/normalize.min.css">
+
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+		<!-- Latest compiled and minified Bootstrap Files -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+		<!-- Custom styles -->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+
 	</head>
 	<body>
-		<h1>Hello World!</h1>
+		<div class="site-wrapper">
+			<div class="site-wrapper-inner">
+				<section class="parallax-section-1">
+					<div class="container">
+						<div class="hero">
+							<div class="slogan">
+								<h3>Welcome to</h3>
+								<h1>ThoughtFire</h1>
+								<h3>We &hearts; you!</h3>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="full-lg"></section>
+			</div>
+		</div>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/parallax-plugin.js"></script>
+
+		<script type="text/javascript">
+			$('.parallax-section-1').parallax({
+				speed : 0.25
+			});
+		</script>
 	</body>
 </html>
