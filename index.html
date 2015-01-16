@@ -20,10 +20,10 @@
 	<body>
 		<div class="site-wrapper">
 			<div class="site-wrapper-inner">
-				<section class="parallax-section-1">
-					<div class="parallax-section-back">
-						<div class="parallax-section-mid">
-							<div class="parallax-section-front">
+				<section class="parallax-section-1" data-stellar-background-ratio="1.00">
+					<div class="parallax-section-back" data-stellar-background-ratio="1.25">
+						<div class="parallax-section-mid" data-stellar-background-ratio="1.50">
+							<div class="parallax-section-front" data-stellar-background-ratio="1.75">
 								<div class="container">
 									<div class="hero">
 										<div class="slogan">
@@ -51,23 +51,15 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/parallax-plugin.js"></script>
+        <!-- <script type="text/javascript" src="js/parallax-plugin.js"></script> -->
+        <script type="text/javascript" src="js/stellar.js"></script>
 
 		<script type="text/javascript">
-			$('.parallax-section-1').parallax({
-				speed : 0.15
-			});
-
-			$('.parallax-section-back').parallax({
-				speed : 0.35
-			});
-
-			$('.parallax-section-mid').parallax({
-				speed : 0.55
-			});
-
-			$('.parallax-section-front').parallax({
-				speed : 0.75
+			$(function(){
+				$.stellar({
+					horizontalScrolling: false,
+					verticalOffset: 0
+				});
 			});
 		</script>
 	</body>
