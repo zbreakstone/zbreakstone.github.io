@@ -7,7 +7,7 @@ body {
 
 h1 {
 	font-size: 4em;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .site-wrapper {
@@ -20,6 +20,7 @@ h1 {
 
 .parallax-section-1 {
 	position: relative;
+	z-index: 1;
 	height: 100vh;
     background-position: center top;
     background-repeat: no-repeat;
@@ -28,28 +29,108 @@ h1 {
     background-size: cover; 
 }
 
+.parallax-section-back {
+	position: relative;
+	z-index: 2;
+	height: 100vh;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url('../img/parallax-back.png');
+    background-size: cover; 
+}
+
+.parallax-section-mid {
+	position: relative;
+	z-index: 3;
+	height: 100vh;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url('../img/parallax-mid.png');
+    background-size: cover; 
+}
+
+.parallax-section-front {
+	position: relative;
+	z-index: 4;
+	height: 100vh;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url('../img/parallax-front.png');
+    background-size: cover; 
+}
+
 .container {
-	width: 75vw;
+	width: 50vw;
 	margin: 0 auto;
 	float: none;
 }
 
 .hero {
-	height: 0;
-	position: absolute;
-	top: 50%;
-	bottom: 50%;
-	left: 0;
-	right: 0;
-	color: bisque;
 	text-align: center;
+	overflow: hidden;
 }
-	.hero .slogan {
-		position: relative;
+	.hero div {
+		position: absolute;
   		top: 50%;
-  		transform: translateY(-50%);
+  		left: 0;
+  		right: 0;
+	  	-webkit-transform: translateY(-50%);
+	  	-ms-transform: translateY(-50%);
+	  	transform: translateY(-50%);
 	}
 		.hero .slogan h1 {
-			font-family: 'Lobster Two', cursive;
-			font-size: 6em;
+			color: #fff;
+			font-family: 'Lato', sans-serif;
+			font-weight: 700;
+			font-size: 7em;
+			text-transform: uppercase;
+			margin: 0;
 		}
+
+		.hero .slogan h3 {
+			color: #fff;
+			font-size: 4em;
+			font-weight: 100;
+		}
+
+.full-lg {
+	/*position: relative;*/
+	/*height: 100vh;*/
+	background: #FFE4C4;
+	padding: 10vh;
+}
+	/*.full-lg .lead p {
+		position: absolute;
+  		top: 50%;
+  		left: 0;
+  		right: 0;
+	  	-webkit-transform: translateY(-50%);
+	  	-ms-transform: translateY(-50%);
+	  	transform: translateY(-50%);
+	}*/
+
+.lead {
+	text-align: center;
+}
+	.lead img {
+		margin-bottom: 10vh;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

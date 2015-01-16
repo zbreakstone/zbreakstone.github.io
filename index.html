@@ -14,22 +14,37 @@
 		<!-- Custom styles -->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
 	</head>
 	<body>
 		<div class="site-wrapper">
 			<div class="site-wrapper-inner">
 				<section class="parallax-section-1">
-					<div class="container">
-						<div class="hero">
-							<div class="slogan">
-								<h3>Welcome to</h3>
-								<h1>ThoughtFire</h1>
-								<h3>We &hearts; you!</h3>
+					<div class="parallax-section-back">
+						<div class="parallax-section-mid">
+							<div class="parallax-section-front">
+								<div class="container">
+									<div class="hero">
+										<div class="slogan">
+											<h3>Welcome to</h3>
+											<h1>ThoughtFire</h1>
+											<h3>We <i class="fa fa-heart"></i> design!</h3>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</section>
-				<section class="full-lg"></section>
+				<section class="full-lg">
+					<div class="container">
+						<div class="lead">
+							<img src="img/logo.svg">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, explicabo praesentium. Voluptatum rerum aliquam totam consequuntur, similique, amet tenetur labore exercitationem autem dignissimos. Nam nemo facilis hic quos neque quaerat laudantium a aliquam, sint fugit dolore ut voluptatem nihil, repudiandae saepe minima reiciendis aspernatur accusamus eligendi? Cum quos harum a numquam eveniet. Vero, officiis, voluptatem. Ratione harum nemo aut, est fuga, voluptatibus voluptatem magni optio impedit quibusdam non saepe, suscipit. Alias quibusdam consequuntur nulla quis fugit facere impedit non natus quo quasi, laudantium doloremque nisi, fuga. In, adipisci saepe ex fugiat quo quia asperiores voluptate repellat. Delectus iure reiciendis, voluptatibus.</p>
+						</div>
+					</div>
+				</section>
 			</div>
 		</div>
 
@@ -40,7 +55,19 @@
 
 		<script type="text/javascript">
 			$('.parallax-section-1').parallax({
-				speed : 0.25
+				speed : 0.15
+			});
+
+			$('.parallax-section-back').parallax({
+				speed : 0.35
+			});
+
+			$('.parallax-section-mid').parallax({
+				speed : 0.55
+			});
+
+			$('.parallax-section-front').parallax({
+				speed : 0.75
 			});
 		</script>
 	</body>
