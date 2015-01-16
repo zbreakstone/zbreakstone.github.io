@@ -82,7 +82,7 @@ h1 {
 	  	transform: translateY(-50%);
 	}
 		.hero .slogan h1 {
-			color: #fff;
+			color: #FF4D74;
 			font-family: 'Lato', sans-serif;
 			font-weight: 700;
 			font-size: 7em;
@@ -97,20 +97,20 @@ h1 {
 		}
 
 .full-lg {
-	/*position: relative;*/
-	/*height: 100vh;*/
+	position: relative;
+	min-height: 100vh;
 	background: #FFE4C4;
 	padding: 10vh;
 }
-	/*.full-lg .lead p {
-		position: absolute;
-  		top: 50%;
+	.full-lg .lead {
+		position: relative;
+  		top: 50vh;
   		left: 0;
   		right: 0;
-	  	-webkit-transform: translateY(-50%);
-	  	-ms-transform: translateY(-50%);
-	  	transform: translateY(-50%);
-	}*/
+	  	-webkit-transform: translateY(-50vh);
+	  	-ms-transform: translateY(-50vh);
+	  	transform: translateY(-50vh);
+	}
 
 .lead {
 	text-align: center;
