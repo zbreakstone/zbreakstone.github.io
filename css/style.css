@@ -25,7 +25,7 @@ h1 {
     background-position: center top;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-image: url('http://lorempixel.com/gray/1000/1000/people');
+    background-image: url('../img/girl.jpeg');
     background-size: cover; 
 }
 
@@ -34,10 +34,10 @@ h1 {
 	z-index: 2;
 	height: 100vh;
     background-position: center top;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-attachment: fixed;
-    background-image: url('../img/parallax-back.png');
-    background-size: cover;
+    background-image: url('../img/parallax-bg.png');
+/*    background-size: cover;*/
 }
 
 .parallax-section-mid {
@@ -45,10 +45,10 @@ h1 {
 	z-index: 3;
 	height: 100vh;
     background-position: center top;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-attachment: fixed;
-    background-image: url('../img/parallax-mid.png');
-    background-size: cover;
+    background-image: url('../img/parallax-bg.png');
+/*    background-size: cover;*/
 }
 
 .parallax-section-front {
@@ -56,10 +56,10 @@ h1 {
 	z-index: 4;
 	height: 100vh;
     background-position: center top;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-attachment: fixed;
-    background-image: url('../img/parallax-front.png');
-    background-size: cover;
+    background-image: url('../img/parallax-bg.png');
+/*    background-size: cover;*/
 }
 
 .container {
